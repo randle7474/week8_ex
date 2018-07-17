@@ -1,0 +1,22 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+     </ion-navbar>
+
+  </ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <p>You can get your location easily by clicking on</p>
+      <button (click)="getLocation()">Get Location</button>
+    </ion-card-content>
+  </ion-card>
+
+  {{getLatitude()}}
+  {{getLongitude()}}
+
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+
+    <ion-navbar primary [ngClass]="{'large-center-title': isWP}">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+     </ion-navbar>
+
+  </ion-header>
+
+  <ion-content padding>
+
+  <ion-card>
+    <ion-card-content>
+      <button (click)="takePicture()">Take a Picture</button>
+
+      <h2>Your Latest Picture:</h2>
+      <img [src]="base64Image" *ngIf="base64Image" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>
